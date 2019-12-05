@@ -1,0 +1,1 @@
+for t from 1 to 100 step 0.1 draw(1+sin(sqrt(2*3**2*2)-5*t)-sin(t), cos(t*24-e**sqrt(pi)));

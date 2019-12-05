@@ -1,0 +1,16 @@
+// 阿基米德螺线
+// r = a + b*t
+ROT IS 0;
+for t from pi/2 to 3/2*pi step 0.001 draw (t*cos(t), t*sin(t)) of blue;
+for t from pi/2 to 3/2*pi step 0.001 draw (-t*cos(t), t*sin(t));
+
+ROT IS -pi/2;
+for t from 0 to pi step 0.001 draw (t*cos(t), t*sin(t)) of yellow;
+for t from 0 to pi step 0.001 draw (t*cos(t), -t*sin(t));
+
+// 费马螺线
+// r = a*sqrt(t)
+ROT IS -pi/2;
+for t from 0 to pi step 0.001 draw (2*sqrt(t)*cos(t), 2*sqrt(t)*sin(t)) of red;
+for t from 0 to pi step 0.001 draw (2*sqrt(t)*cos(t), -2*sqrt(t)*sin(t));
+

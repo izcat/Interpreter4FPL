@@ -1,0 +1,7 @@
+origin is (0, 35);  
+SCALE is ( 40,40); 
+for t from 0 to 2*pi step 0.01 draw (sin(t), cos(t));
+for t from 0 to 2*pi step 0.01 draw (-2.2+sin(t), cos(t)) of blue;
+for t from 0 to 2*pi step 0.01 draw (2.2+sin(t), cos(t)) of Red;
+for t from 0 to 2*pi step 0.01 draw (-1.1+sin(t), -1.1+cos(t)) of YELLOW;
+for t from 0 to 2*pi step 0.01 draw (1.1+sin(t), -1.1+cos(t)) of GREEN;

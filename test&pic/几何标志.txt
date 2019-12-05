@@ -1,0 +1,41 @@
+
+ROT IS pi/12;
+for t from 0 to 1 step 0.01 draw (0, t) of blue;
+for t from 0 to 1 step 0.01 draw (1, t);
+for t from 0 to 1 step 0.01 draw (t, 0);
+for t from 0 to 1 step 0.01 draw (t, 1);
+
+
+ROT IS pi/12+pi/3;
+for t from 0 to 1 step 0.01 draw (0, t);
+for t from 0 to 1 step 0.01 draw (1, t);
+for t from 0 to 1 step 0.01 draw (t, 0);
+for t from 0 to 1 step 0.01 draw (t, 1);
+
+
+ROT IS pi/12+pi/3*2;
+for t from 0 to 1 step 0.01 draw (0, t);
+for t from 0 to 1 step 0.01 draw (1, t);
+for t from 0 to 1 step 0.01 draw (t, 0);
+for t from 0 to 1 step 0.01 draw (t, 1);
+
+
+ROT IS pi/12+pi/3*3;
+for t from 0 to 1 step 0.01 draw (0, t);
+for t from 0 to 1 step 0.01 draw (1, t);
+for t from 0 to 1 step 0.01 draw (t, 0);
+for t from 0 to 1 step 0.01 draw (t, 1);
+
+
+ROT IS pi/12+pi/3*4;
+for t from 0 to 1 step 0.01 draw (0, t);
+for t from 0 to 1 step 0.01 draw (1, t);
+for t from 0 to 1 step 0.01 draw (t, 0);
+for t from 0 to 1 step 0.01 draw (t, 1);
+
+
+ROT IS pi/12+pi/3*5;
+for t from 0 to 1 step 0.01 draw (0, t);
+for t from 0 to 1 step 0.01 draw (1, t);
+for t from 0 to 1 step 0.01 draw (t, 0);
+for t from 0 to 1 step 0.01 draw (t, 1);

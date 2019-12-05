@@ -1,0 +1,54 @@
+-- 十字线
+ORIGIN IS (400, 400);
+FOR T FROM -350 TO 350 STEP 1 DRAW (T, 0); 
+FOR T FROM -350 TO 350 STEP 1 DRAW (0, T); 
+
+
+------------------------------------------------------------
+
+-- 左上角
+ORIGIN IS (200,550); 
+SCALE IS (80,80); 
+ROT IS 0; 
+FOR T FROM 0 TO 2*PI STEP PI/50 DRAW (COS(T), SIN(T)) of YELLOW;
+FOR T FROM 0 TO 20*PI STEP PI/50 DRAW ((1-1/(10/7))*COS(T)+1/(10/7)*COS(-T*((10/7)-1)), (1-1/(10/7))*SIN(T)+1/(10/7)*SIN(-T*((10/7)-1)));
+
+------------------------------------------------------------
+
+-- 右上角
+ORIGIN IS (600,550); 
+SCALE IS (80,80/3); 
+
+ROT IS PI/2+0*PI/3; 
+FOR T FROM -PI TO PI STEP PI/50 DRAW (COS(T),SIN(T)) of RED;
+
+ROT IS PI/2+2*PI/3; 
+FOR T FROM -PI TO PI STEP PI/50 DRAW (COS(T),SIN(T)); 
+
+ROT IS PI/2-2*PI/3; 
+FOR T FROM -PI TO PI STEP PI/50 DRAW (COS(T),SIN(T)); 
+
+
+------------------------------------------------------------
+
+-- 左下角
+SCALE IS (20, 30); 
+ROT IS 0; 
+ORIGIN IS (200-20*PI, 200);
+FOR T FROM 0 TO 2*PI STEP PI/50 DRAW (T, SIN(T)) of GREEN;
+ORIGIN IS (200-20*PI, 250); 
+FOR T FROM 0 TO 2*PI STEP PI/50 DRAW (T, SIN(T)); 
+ORIGIN IS (200-20*PI, 300); 
+FOR T FROM 0 TO 2*PI STEP PI/50 DRAW (T, SIN(T)); 
+
+------------------------------------------------------------
+
+--右下角
+ORIGIN IS (600,250); 
+ROT IS 0; 
+
+SCALE IS (50, 50); 
+FOR T FROM 0 TO 2*PI STEP PI/100 DRAW(COS(T), SIN(T)) of BLUE;
+
+SCALE IS (100, 100); 
+FOR T FROM 0 TO 2*PI STEP PI/200 DRAW(COS(T), SIN(T)); 

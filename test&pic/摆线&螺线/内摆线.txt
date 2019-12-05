@@ -1,0 +1,5 @@
+// 旋轮线（内摆线）
+// X=(a-b)cosθ+bcos[(a-b)θ/b]
+// Y=(a-b)sinθ-bsin[(a-b)θ/b]
+// 当a/b是有理数时，它是闭曲线
+for t from 0 to 4*pi step 0.01 draw (11*cos(t)-5*cos(11/5*t), 11*sin(t)-5*sin(11/5*t));

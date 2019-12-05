@@ -1,0 +1,5 @@
+//origin is (0, 35);  
+--SCALE is ( 40,40); 
+// 等角螺线 / 对数螺线
+// r = a*e**(b*t)
+for t from 0 to 6*pi step 0.01 draw (e**(0.2*t)*cos(t), e**(0.2*t)*sin(t));

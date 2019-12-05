@@ -1,0 +1,12 @@
+
+ROT IS -pi/2;
+for t from 0 to pi step 0.001 draw (t*cos(t), t*sin(t)) of red;
+for t from 0 to pi step 0.001 draw (t*cos(t), -t*sin(t));
+
+ROT IS -pi/2+pi/12;
+for t from 0 to pi step 0.001 draw (t*cos(t), t*sin(t)) of yellow;
+for t from 0 to pi step 0.001 draw (t*cos(t), -t*sin(t));
+
+ROT IS -pi/2-pi/12;
+for t from 0 to pi step 0.001 draw (t*cos(t), t*sin(t)) of yellow;
+for t from 0 to pi step 0.001 draw (t*cos(t), -t*sin(t));

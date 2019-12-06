@@ -19,8 +19,6 @@ class Painter():
 		Painter.scx = Scale_x
 		Painter.scy = Scale_y
 		Painter.ang = Rot_angle
-		Painter.Points['X'].clear()
-		Painter.Points['Y'].clear()  
 
 	def paint(T_start, T_end, T_step, Point_x, Point_y):
 		# for T_value in range(T_start, T_end, T_step):

@@ -3,12 +3,12 @@
 
 ## 实验目的
 实现函数绘图语言的解释器，通过实验加深对编译器构造原理和方法的理解，巩固所学知识。
- -	会用正规式设计简单语言的词法；
- -	会用产生式设计简单语言的语法；
- -	会用递归下降子程序编写语言的解释器。
+ -	会用正规式设计简单语言的词法
+ -	会用产生式设计简单语言的语法
+ -	会用递归下降子程序编写语言的解释器
 
 
-
+    
 ## 实验要求
 
 ### 语句原则：
@@ -66,9 +66,10 @@
 ### 角度旋转(ROT)语句
   语法：ROT  IS 角度； 
 
-  语义：逆时针旋转角度所规定的弧度值。具体计算公式：
-    旋转后X=旋转前X*COS(角度)+旋转前Y*SIN(角度) 
-    旋转后Y=旋转前Y*COS(角度)-旋转前X*SIN(角度)
+  语义：逆时针旋转角度所规定的弧度值。
+      具体计算公式：
+      旋转后X=旋转前X*COS(角度)+旋转前Y*SIN(角度) 
+      旋转后Y=旋转前Y*COS(角度)-旋转前X*SIN(角度)
     
   举例：ROT IS PI/2;
 
@@ -76,10 +77,10 @@
 
 ### 注释语句 
   作用：便于理解；
-        屏蔽暂时不需要的语句。
-  语法：//  This is a comment line 
-        或   --  此行是注释 
-  语义：// 或 -- 之后，直到行尾，均是注释
+        屏蔽暂时不需要的语句。    
+  语法：//  This is a comment line   
+        或   --  此行是注释   
+  语义：// 或 -- 之后，直到行尾，均是注释   
 
 
 
@@ -88,7 +89,7 @@
 
 
 ## 实验过程
-
+    
 ### Version 1
 代码详见 https://github.com/izcat/Interpreter4FPL/tree/master/version1
 
@@ -103,7 +104,7 @@
 
   此版本 `Lexer` 会无法正确识别带小数点的浮点数！在version2中的 `Lexer` 才是正确写法！
 
-
+    
 ### Version 2
 代码详见 https://github.com/izcat/Interpreter4FPL/tree/master/version2
 
@@ -122,7 +123,8 @@
   词法分析器与语义分析器没有完全分离，本解释器在语法分析阶段，未生成源代码的整体语法树，直接将绘制的点信息交给painter处理  
   缺少异常处理机制  
   没有完全面向对象开发
-
+    
+    
 ### Version 3
 代码详见 https://github.com/izcat/Interpreter4FPL/tree/master/version2
 
@@ -149,7 +151,8 @@
   - 参考自 https://blog.csdn.net/qiurisiyu2016/article/details/80187177
   - 第三个参数  'r', 'g', 'b', 'k'(Black),'y'(Yellow) 
   - '.' 点标记  ',' 像素点
-
+    
+    
 ### Version 4
 代码详见 https://github.com/izcat/Interpreter4FPL/tree/master/version2
 
@@ -163,8 +166,10 @@
   - 语义分析完成后，`showPic` 执行绘图
 - 改进 `main` 程序入口模块，增加了打开文件选项，可以直接选择写好绘图源程序打开
 
-
+    
 ## 结果展示
-![pic1](https://github.com/izcat/Interpreter4FPL/blob/master/test%26pic/test0.jpg)
-![pic2](https://github.com/izcat/Interpreter4FPL/blob/master/test%26pic/五环.png)
 ![pic3](https://github.com/izcat/Interpreter4FPL/blob/master/test%26pic/几何标志.png)
+![pic2](https://github.com/izcat/Interpreter4FPL/blob/master/test%26pic/五环.png)
+![pic1](https://github.com/izcat/Interpreter4FPL/blob/master/test%26pic/test0.jpg)
+
+

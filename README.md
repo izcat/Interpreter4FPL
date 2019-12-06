@@ -162,3 +162,9 @@
   - 将获取到的语法树交给 `analyse` 方法进行语义分析
   - 语义分析完成后，`showPic` 执行绘图
 - 改进 `main` 程序入口模块，增加了打开文件选项，可以直接选择写好绘图源程序打开
+
+
+## 结果展示
+![pic1](https://github.com/izcat/Interpreter4FPL/blob/master/test%26pic/test0.jpg)
+![pic2](https://github.com/izcat/Interpreter4FPL/blob/master/test%26pic/五环.png)
+![pic3](https://github.com/izcat/Interpreter4FPL/blob/master/test%26pic/几何标志.png)

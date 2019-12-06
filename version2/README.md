@@ -1,8 +1,11 @@
 # Version 2
-已实现实验要求的函数绘图语言的全部功能
-解释器执行的第一个程序结果（显示 'OK' 字样）：
-
-
+已实现实验要求的函数绘图语言的全部功能    
+    
+解释器执行的第一个程序结果（显示 'OK' 字样）：   
+    
+![图片](https://github.com/izcat/Interpreter4FPL/blob/master/version2/0testOK.png "结果")
+    
+    
 
 ## 修复Bug
   由于新加入主界面的模块 `main.py` 无法正常 import 写好的 `parser`模块，因为会与 Python 的同名库冲突。   
